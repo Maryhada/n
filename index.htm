@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navbar on your own</title>
+        <style>
+            body{
+                margin: 0;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                background-color: hotpink;
+            }
+            .topnav{
+                overflow: hidden;
+                background-color: hotpink;
+            }
+            .topnav a{
+                float: left;
+                color: lightpink;
+                text-align: top;
+                padding: 14px;
+                text-decoration: none;
+
+            }
+            .topnav a:hover{
+                background-color: white;
+                color: burlywood;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="topnav">
+    <a class="active">Active</a>
+    <a href="index.htm">Home</a>
+    <a href="main2.html">Gallery</a>
+    <a href="main.html">Contact</a>
+    <a href="main3.html">About_Me</a>
+</div>
+        
+        <section>
+            <img class="mySlides" src="746b48643f77d4c180341430cb4725a9.jpg" alt="Food1"    style="height:400px,">
+            <img class="mySlides" src="367bc9bc8ce3cb7c02d33e874e01cc92.jpg" alt="Food2" style="height: 400px,">
+            <img class="mySlides" src="e53f552a04e6ac39b465c455d39d9ab7.jpg" alt="Food3" style="height: 400px,">
+            <img class="mySlides" src="download (3).jpg" alt="Food4" style="height: 400px," width="400px">
+        </section>
+        <section>
+            <h2>Pics that are cute for pfp</h2>
+            <p>This are pics good for wallpaper, phone, laptop etc.
+                we are not a group but indivdiual and a good power dont forget to sub and like.😁😁😁😁😁😀😀😀😀
+                </p>
+        </section>
+      <script>
+        //Automatic Slideshow
+        var myIndex = 0;
+        carousel();
+
+        function carousel(){
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++){
+              x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel,3000);
+        }
+      </script>
+      <footer>
+        By - Treasure Olanipekun
+        Contact - treasure.olanipekun@gmail.com
+      </footer>
+    </body>
+</html>

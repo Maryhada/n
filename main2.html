@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <title>My favourite sports</title>
+        <link rel="stylesheet" href="style.css">
+     </head>
+     <style>
+        
+           body{
+                margin: 0;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                background-color: skyblue;
+            }
+            .topnav{
+                overflow: hidden;
+                background-color: lightblue;
+            }
+            .topnav a{
+                float: left;
+                color: teal;
+                text-align: top;
+                padding: 14px;
+                text-decoration: none;
+
+            }
+            .topnav a:hover{
+                background-color: white;
+                color: darkblue;
+            }
+     </style>
+     <body>
+    <div class="topnav">
+        <a class="active">Active</a>
+        <a href="index.htm">Home</a>
+        <a href="main2.html">Gallery</a>
+        <a href="main.html">Contact</a>
+        <a href="main3.html">About_Me</a>
+        </div>
+        <h1>Football</h1>
+            <p>Football is a field event played by eleven players but in total 22 players.I am not saying this to persude u to join a football club.The word "football" doesn't refer to a single sport but to a family of team sports that involve, to varying degrees,
+            kicking a ball to score a goal. The most common element is scoring goals or points by moving the ball to an opposing
+            team's end of the field. Interestingly, the name itself is debated; it might refer to kicking the ball with the foot, or
+            to the fact these games were played on foot, rather than on horseback.Globally, there are many different types of football, which can be broadly split into kicking codes (like soccer, where
+            handling the ball is limited) and carrying codes (like American football and rugby, where carrying the ball by hand is
+            common). The table below summarizes some of the main types. </p>
+            </body>
+        
+               <section>
+                <img class="mySlides" src="download.jpg" alt="Food1" width="400px" height="400px">
+                <img class="mySlides" src="download (1).jpg" alt=" Food2" height="300px" width="200px">
+                <img class="mySlides" src="download (2).jpg" alt=" Food2" height="300px" width="200px">
+                <img class="mySlides" src="download2.jpg" alt=" Food2" height="300px" width="200px">
+                </section>
+                <script>
+                    //Automatic Slideshow
+                    var myIndex = 0;
+                    carousel();
+
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) { myIndex = 1 }
+                        x[myIndex - 1].style.display = "block";
+                        setTimeout(carousel, 3000);
+                    }
+                </script>
+                <footer>
+                    By Treasure Olanipekun 
+                    Contact= treasure.olanipekun@gmail.com
+                </footer>
+      </body>
+   </html>

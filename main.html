@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website</title>
+    </head>
+    <style>
+        #footer{
+               color: #b22222; 
+               position: fixed; 
+               left: 0;
+               bottom: 0;
+               text-align: center;
+              box-shadow: #b22222;
+              box-decoration-break: slice;
+              text-shadow: 0.2;
+        }
+        body{
+            background-color: rgb(215, 199, 199);
+            font-family: 'Segoe UI', Tahoma,  Verdana, sans-serif;
+            color: rgb(5, 43, 30);
+            background-image: -moz-linear-gradient();
+            scrollbar-color: blue;
+
+        
+
+        }
+        h1{
+            color: rgb(210, 64, 15);
+            background-color: aquamarine;
+        }
+          body{
+                margin: 0;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                background-color: hotpink;
+            }
+            .topnav{
+                overflow: hidden;
+                background-color: hotpink;
+            }
+            .topnav a{
+                float: left;
+                color: lightpink;
+                text-align: top;
+                padding: 14px;
+                text-decoration: none;
+
+            }
+            .topnav a:hover{
+                background-color: white;
+                color: burlywood;
+            }
+    </style>
+    <body>
+        <div class="topnav">
+            <a class="active">Active</a>
+            <a href="index.htm">Home</a>
+            <a href="main2.html">Gallery</a>
+            <a href="main.html">Contact</a>
+            <a href="main3.html">About_Me</a>
+        </div>
+        
+        <span class="border trans" style="font-size: 40px;">
+            <center>Welcome all to my Channel dont forget to like and subscribe</center>
+         </span><br>
+         <section>
+            <h2>Why is Paris called the City of Love?</h2>
+            <p>Paris is called the "City of Love" because its romantic atmosphere, artistic culture, aesthetic beauty, and popular
+            landmarks like the Eiffel Tower have made it a dream destination for lovers, honeymooners, and artists for centuries.
+            The city's charm, highlighted in literature and film, and the French culture's embrace of romantic expression,
+            contribute to this nickname, which became more formalized around the time of the ICCA's city branding efforts in the
+            20th century.</p>
+         </section>
+         <div class="pimg"></div>
+        <h3></h3>
+        <p>
+            <img  src="image.png"  alt="food" height="300px" width="200px">
+            
+        
+        </p>
+        
+    </div>
+    <script>
+        //Automatic Slideshow
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+    <div id="footer">
+        <p>Contact 08009565432</p>
+        <p>email = treasure.olanipekun@gmail.com</p>
+        <p>Shop = Codingal</p> 
+    </div>
+
+    <footer>
+        
+    </footer>
+    
+     </body>
+</html>
